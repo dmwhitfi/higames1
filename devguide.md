@@ -5,7 +5,7 @@
 - 🤖 When in doubt, ALWAYS ask the AI assistant! Better to check than to make mistakes
 - 📝 Keep this guide open while you work - you'll refer to it often
 
-## Part 1: Initial Setup
+## Part 1: Initial Setup 
 
 ### PostgreSQL Installation and Setup
 🔍 Not sure about any step? Ask the AI assistant to explain in more detail!
@@ -58,6 +58,31 @@
 
    - When it asks for password, type the password you set during PostgreSQL installation
    - You should see messages about tables being created
+
+### pgAdmin Setup
+🔍 pgAdmin is a graphical tool to manage your PostgreSQL databases easily!
+
+1. Launch pgAdmin:
+   - Find and open "pgAdmin 4" from your Start menu
+   - When it opens in your browser, it will ask for a master password
+   - Set a master password you'll remember (this is different from PostgreSQL password)
+
+2. Connect to Your Server:
+   - In the left sidebar, find "Servers"
+   - Right-click → Register → Server
+   - In the "General" tab:
+     - Name: LocalPostgres (or any name you like)
+   - In the "Connection" tab:
+     - Host: localhost
+     - Port: 5432
+     - Username: postgres
+     - Password: (your PostgreSQL password from installation)
+   - Click "Save"
+
+3. Verify Database:
+   - Expand "Servers" → "LocalPostgres" → "Databases"
+   - You should see "academy_db" in the list
+   - If you don't see it, ask the AI assistant!
 
 ### Server Setup
 1. Install Backend Dependencies:
